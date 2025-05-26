@@ -7,8 +7,7 @@ import * as getDefinition from "@/tools/getDefinition";
 export class MyMCP extends McpAgent {
 	server = new McpServer({
 		name: "Dexonline MCP Server",
-		description:
-			"An MCP interface for accessing Romanian dictionary data via the Dexonline API",
+		description: "An MCP interface for accessing Romanian dictionary data via the Dexonline API",
 		version: "0.1.0",
 	});
 
