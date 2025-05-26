@@ -21,9 +21,8 @@ export const handler = async (input: { query: string }) => {
 
     if (data?.word) {
       return respond(data.definitions);
-    } else {
-      return respond("I couldn’t find a definition");
     }
+    return respond("I couldn’t find a definition");
   } catch {
     return respond("An error occurred while fetching the definition");
   }
