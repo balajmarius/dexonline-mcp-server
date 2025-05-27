@@ -19,5 +19,3 @@ yarn dev
 ```
 npx @modelcontextprotocol/inspector@latest
 ```
-
-Connect and have fun!
