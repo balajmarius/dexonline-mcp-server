@@ -1069,6 +1069,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dexonline-mcp-server@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dexonline-mcp-server@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:^1.9.4"
+    "@modelcontextprotocol/sdk": "npm:^1.12.0"
+    "@types/node": "npm:^22.15.21"
+    agents: "npm:^0.0.93"
+    http-status-codes: "npm:^2.3.0"
+    typescript: "npm:^5.8.3"
+    wrangler: "npm:^4.16.1"
+    zod: "npm:^3.25.28"
+  languageName: unknown
+  linkType: soft
+
 "diff-match-patch@npm:^1.0.5":
   version: 1.0.5
   resolution: "diff-match-patch@npm:1.0.5"
@@ -2175,21 +2190,6 @@ __metadata:
   checksum: 10c0/f8daf4b724064a4811d118745a781ca0fb4676298b8adadfd6591155549cfea0a067523cf7dd3baeb1265fecc9ce5dfb2fc788c12c66b85202a336593ece0f87
   languageName: node
   linkType: hard
-
-"remote-mcp-server-authless@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "remote-mcp-server-authless@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:^1.9.4"
-    "@modelcontextprotocol/sdk": "npm:^1.12.0"
-    "@types/node": "npm:^22.15.21"
-    agents: "npm:^0.0.93"
-    http-status-codes: "npm:^2.3.0"
-    typescript: "npm:^5.8.3"
-    wrangler: "npm:^4.16.1"
-    zod: "npm:^3.25.28"
-  languageName: unknown
-  linkType: soft
 
 "retry@npm:^0.12.0":
   version: 0.12.0
