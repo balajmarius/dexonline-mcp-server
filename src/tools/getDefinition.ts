@@ -16,9 +16,10 @@ export const handler = async (input: { query: string }) => {
 		const data: DexApiResponse = await result.json();
 
 		if (data?.word) {
-			return respond(data.definitions);
+			const definitions = data.definitions.map((definition) => definition.internalRep);
+			return respond(definitions);
 		}
-		return respond("I couldn’t find a definition");
+		return respond("I couldn't find a definition");
 	} catch {
 		return respond("An error occurred while fetching the definition");
 	}
