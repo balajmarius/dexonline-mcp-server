@@ -4,7 +4,7 @@ import HttpStatus from "http-status-codes";
 
 import * as getDefinition from "@/tools/getDefinition";
 
-export class MyMCP extends McpAgent {
+export class DexMcp extends McpAgent {
 	server = new McpServer({
 		name: "Dexonline MCP Server",
 		description: "An MCP interface for accessing Romanian dictionary data via the Dexonline API",
@@ -21,10 +21,10 @@ export default {
 		const url = new URL(request.url);
 
 		if (url.pathname === "/sse" || url.pathname === "/sse/message") {
-			return MyMCP.serveSSE("/sse").fetch(request, env, ctx);
+			return DexMcp.serveSSE("/sse").fetch(request, env, ctx);
 		}
 		if (url.pathname === "/mcp") {
-			return MyMCP.serve("/mcp").fetch(request, env, ctx);
+			return DexMcp.serve("/mcp").fetch(request, env, ctx);
 		}
 		return new Response("Not found", { status: HttpStatus.NOT_FOUND });
 	},

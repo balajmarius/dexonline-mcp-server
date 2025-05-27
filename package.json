@@ -1,7 +1,7 @@
 {
 	"name": "remote-mcp-server-authless",
 	"version": "0.0.0",
-	"private": true,
+	"type": "commonjs",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
