@@ -1,11 +1,7 @@
 import { z } from "zod";
 
 import { respond } from "@/utils/helpers";
-
-type DexApiResponse = {
-	word: string | undefined;
-	definitions: string[];
-};
+import type { DexApiResponse } from "@/utils/types";
 
 export const name = "getDefinition";
 export const url = "https://dexonline.ro/definitie/";
